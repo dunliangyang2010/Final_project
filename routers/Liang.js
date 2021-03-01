@@ -11,7 +11,7 @@ router.use(function timeLog(req, res, next) {
 
 router.get('/', function(req, res) {
   res.send(
-    'Liang\'s home page'+'<br>'+
+    'This isLiang\'s home page'+'<br>'+
     '<a href="/user/Liang/about"> about </a>'+'<br>'+
     '<a href="/user/Liang/classA.html"> classA </a>'
     );
@@ -21,7 +21,8 @@ router.get('/', function(req, res) {
 router.get('/about', function(req, res) {
   res.send(
     '<h1> About Liang </h1>'+
-    '\n <img src="https://www.omgtw.com/upload/article/original/be134fac90625546754962aeef34925c.jpg" height="60%">'
+    '<h2> 拍謝! 小弟城武啦 </h2>'+
+    '\n <img src="https://i.imgur.com/uReH10K.jpg" height="60%">'
     );
 });
 

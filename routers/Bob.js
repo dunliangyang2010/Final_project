@@ -14,7 +14,10 @@ router.get('/', function(req, res) {
 
 // define the about route
 router.get('/about', function(req, res) {
-  res.send('About Bob');
+  res.send(
+    '<h1> About Bob </h1>'+
+    '\n <img src="https://media.gq.com.tw/photos/5fa926a80a0bef4bfc16744c/master/w_1601,c_limit/bob-ross-vector-3.jpg" height="60%">'
+    );
 });
 
 module.exports = router;
